@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@media print {
+  @page {
+    margin: 0;
+  }
+  
+  body * {
+    visibility: hidden;
+  }
+  
+  #root, #root * {
+    visibility: visible;
+  }
+
+  .print\:hidden,
+  .print\:hidden * {
+    visibility: hidden !important;
+    display: none !important;
+  }
+
+  /* Make sure the receipt preview itself is fully visible and not artificially constrained */
+  .print-receipt-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: white !important;
+  }
+}

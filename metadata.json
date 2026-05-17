@@ -1,0 +1,6 @@
+{
+  "name": "Kenyan Supermarket Receipt Generator",
+  "description": "Generate customized 58mm and 80mm receipts mimicking Kenyan supermarkets (like Naivas) with KRA details.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
